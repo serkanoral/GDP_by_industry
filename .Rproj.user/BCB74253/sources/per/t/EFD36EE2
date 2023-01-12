@@ -1,0 +1,26 @@
+{
+    "id": "EFD36EE2",
+    "path": "~/Documents/R/GDP_by_industry/app.R",
+    "project_path": "app.R",
+    "type": "r_source",
+    "hash": "2402337904",
+    "contents": "",
+    "dirty": false,
+    "created": 1673527321920.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "2,0",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1673526359,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1673526359,
+    "read_only": false,
+    "read_only_alternatives": []
+}

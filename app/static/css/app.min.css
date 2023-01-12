@@ -1,0 +1,23 @@
+.container-fluid {
+  padding: 5%;
+  
+}
+
+p , h2 , a{
+  padding-left: 5%;
+  padding-right: 5%;
+  
+}
+
+h2 , a {
+  color: rgb(86,106,142);
+}
+
+.#app-line_chart-line_chart canvas {
+  padding-top: 5%;
+}
+
+
+.well{
+  background-color: rgb(86,106,142);
+}
