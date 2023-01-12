@@ -11,5 +11,6 @@ library(stringr)
 library(stats)
 library(shinyWidgets)
 library(shinybusy)
+library(rsconnect)
 
 

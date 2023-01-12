@@ -57,7 +57,6 @@ load_data <- function() {
     mutate(Date = as.Date(paste0(Year, "-", Month, "-", 1))) |>
     select(-Year, -Quarter, -NoteRef,-Month,-Industry)
   
-  df |> pull(TableName) |>  unique() |> write_rds("app/logic/table_name.rds")
-  
   return(df)
+  
 }

@@ -1,0 +1,13 @@
+name: GDP_by_industry
+title: GDP_by_industry
+username:
+account: serkanoral
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8023123
+bundleId: 6726348
+url: https://serkanoral.shinyapps.io/GDP_by_industry/
+when: 1673542914.90637
+lastSyncTime: 1673542914.90639
+asMultiple: FALSE
+asStatic: FALSE

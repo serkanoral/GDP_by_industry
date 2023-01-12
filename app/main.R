@@ -1,5 +1,5 @@
-box::use(shiny[fluidPage, moduleServer, NS, reactive, tags, br, p, h2, a],
-         shinybusy[busy_start_up],)
+box::use(shiny[fluidPage, moduleServer, NS, reactive, tags, br, p, h2, a, reactiveFileReader],
+         readr[read_rds])
 
 box::use(app / view / tree_chart,
          app / view / line_chart,
@@ -12,10 +12,6 @@ box::use(app / view / tree_chart,
 ui <- function(id) {
   ns <- NS(id)
   fluidPage(
-    busy_start_up(
-      loader = tags$img(src = "https://media.giphy.com/media/BUz6TVk9LmVwxg9Nlj/giphy.gif"),
-      timeout = 30000
-    ),
     br(),
     br(),
     h2("GDP BY INDUSTRY"),
@@ -40,7 +36,7 @@ server <- function(id) {
   moduleServer(id, function(input, output, session) {
     
     
-    df <- reactive(get_data$load_data())
+    df <- reactiveFileReader(86400000, session, "app/logic/df.rds", read_rds)
     line_chart$server("line_chart", df)
     tree_chart$server("tree_chart")
   })
